@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Items - EchoFind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EchoFind</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lost.html">Lost Items</a>
+            <a href="found.html">Found Items</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <main>
+        <h2>Report a Found Item</h2>
+        <form>
+            <label for="found-item-name">Item Name:</label>
+            <input type="text" id="found-item-name" required>
+
+            <label for="found-description">Description:</label>
+            <textarea id="found-description" required></textarea>
+
+            <label for="found-image">Upload Image:</label>
+            <input type="file" id="found-image" accept="image/*">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About EchoFind</h3>
+                <p>EchoFind is your trusted platform for reporting and recovering lost items efficiently.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@echofind.com">support@echofind.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Location: 123 Echo Street, City, Country</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 EchoFind | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
