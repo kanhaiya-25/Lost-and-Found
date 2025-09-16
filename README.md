@@ -2,7 +2,7 @@
 
 A web platform that helps people report and find lost items easily. Users can post details of lost or found items, search through listings, and connect with others to return belongings to their rightful owners.
 
-🚀 Features
+🚀 Features()
 
 Post Lost Items with details and images
 
